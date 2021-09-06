@@ -1,0 +1,41 @@
+<h3>PRODUCT DETAILS</h3>
+<div class="card-columns">
+    <div class="card bg-info">
+        <!-- {{name}} -->
+        <div class="card-body text-center" *ngFor="let item of allProducts">
+        <p class="card-text">{{item.ProductId}}</p>
+        <p class="card-text">{{item.Productname}}</p> 
+        <p class="card-text">{{item.Productfeatures}}</p>
+       <button class="btn btn-primary" style="margin-right:5px">BuyNow</button>
+       <button class="btn btn-primary" style="margin-right:20px">Add to cart</button><br>
+        <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-danger" (click)="Remove(n)">-</button>
+            </div>
+                <div class="col-md-7">
+                   <input type="text" class="form-control" style="margin-left:5px;"><br>
+                    <div *ngFor="let item of InputArray">
+                        <input type="text" class="form-control" style="margin-left:5px;"><br>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-success" style="margin-left:5px;" (click)="Add()">+</button>
+            </div>
+            <br>
+            </div>
+        </div>
+     </div>
+  
+</div>
+    
+    <!--<tr>
+        <td>ProductId </td>
+        <td>Productname </td>
+        <td>Productfeatures </td>
+    </tr>
+    <tr *ngFor="let item of ProductArray"></tr>
+        <td>{{item.ProductId}}</td>
+        <td>{{item.Productname}}</td>
+        <td>{{item.Productfeatures}}</td>
+    
+    </tr>-->

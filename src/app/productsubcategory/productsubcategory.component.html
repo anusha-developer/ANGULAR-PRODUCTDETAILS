@@ -1,0 +1,48 @@
+<h3>PRODUCT SUBDETAILS</h3>
+ <!-- <div class="card-columns">
+    <div class="card bg-info">
+        {{name}} 
+        <div class="card-body text-center" *ngFor="let item of allProducts">
+        <p class="card-text">{{item.Id}}</p>
+        <p class="card-text">{{item.Name}}</p> 
+        <p class="card-text">{{item.maincategoryId}}</p>
+       <button class="btn btn-primary" style="margin-right:5px">BuyNow</button>
+       <button class="btn btn-primary" style="margin-right:20px">Add to cart</button><br>
+        <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-danger" (click)="Remove(n)">-</button>
+            </div>
+                <div class="col-md-7">
+                   <input type="text" class="form-control" style="margin-left:5px;"><br>
+                    <div *ngFor="let item of InputArray">
+                        <input type="text" class="form-control" style="margin-left:5px;"><br>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-success" style="margin-left:5px;" (click)="Add()">+</button>
+            </div>
+            <br>
+            </div>
+        </div>
+     </div>
+   
+</div> -->
+
+<div class ="container">
+    <table class ="table table-bordered">
+    <thead>
+    <tr>
+        <td>Id </td>
+        <td>Name </td>
+        <td>maincategoryId </td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of ProductSubArray">
+        <td>{{item.Id}}</td>
+        <td>{{item.Name}}</td>
+        <td>{{item.maincategoryId}}</td>
+    </tr>
+</tbody>
+</table>
+</div>
